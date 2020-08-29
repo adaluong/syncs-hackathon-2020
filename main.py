@@ -191,7 +191,7 @@ class AttributesScreen(Screen):
         self.add_widget(self.layout)
 
     def button_press(self, instance):
-        if len(self.textinputs) < 5:
+        if len(self.textinputs) < 3:
             self.textinputs.append(TextInput(background_color=[0.925, 0.949, 0.996, 1],
                                         size=(360, 50),
                                         size_hint=(None, None),
@@ -223,8 +223,8 @@ class OptionScreen(Screen):
         # Create the labels
         label = Label(text=f"Enter {topic} options and\nscores for each priority\nout of 10:",
                       halign="center",
-                      font_size=30,
-                      size=(360, 150),
+                      font_size=25,
+                      size=(360, 100),
                       size_hint=(None, None),
                       font_name="aileron/Aileron-Bold.otf")
 
